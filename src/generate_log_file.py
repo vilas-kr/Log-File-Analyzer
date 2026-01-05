@@ -6,7 +6,7 @@ def log_file_generator():
     log_level = ['ERROR', 'WARNING', 'CRITICAL', 'INFO']
     
     with open("server_log.txt", "w") as f:
-        for i in range(10):
+        for i in range(100):
             ip_address = fake.ipv4()
             datetime = fake.date_time().strftime(f"%d/%m/%Y:%H:%M:%S +0530")
             log = fake.random_element(log_level)
